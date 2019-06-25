@@ -12,10 +12,11 @@ class App extends Component {
   increment() {
     this.setState({ count: this.state.count + 1 })
   }
+
   render() {
     return (
       <div className="App">
-        <button onClick={() => this.incremen()}>Click Me!</button>
+        <button onClick={() => this.increment()}>Click Me!</button>
         <p>Click the button above to increment the number below.</p>
         <p>Button Clicks: {this.state.count}</p>
       </div>
